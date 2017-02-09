@@ -79599,7 +79599,7 @@
 	      var patientsList = this.retrievePatients();
 	      var patientListUpdated = patient.id ? this.editPatient(patient, patientsList) : this.addPatient(patient, patientsList);
 	
-	      _localStorage.get(this).set('patients', JSON.stringify(patientsList));
+	      _localStorage.get(this).set('patients', JSON.stringify(patientListUpdated));
 	    }
 	  }, {
 	    key: 'addPatient',
@@ -79813,4 +79813,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=app.659127d7a3c00fadde5b.js.map
+//# sourceMappingURL=app.9c25af6b423c5913bd1b.js.map
