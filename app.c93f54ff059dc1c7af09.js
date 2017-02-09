@@ -79708,7 +79708,7 @@
 	  }, {
 	    key: 'addNewPatient',
 	    value: function addNewPatient(patient) {
-	      var diagnosesAll = this.retrieveDiagnosesAll();
+	      var diagnosesAll = this.retrieveDiagnosesAll() ? this.retrieveDiagnosesAll() : [];
 	      diagnosesAll.push(patient);
 	      this.saveDiagnosesAll(diagnosesAll);
 	    }
@@ -79813,4 +79813,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=app.9c25af6b423c5913bd1b.js.map
+//# sourceMappingURL=app.c93f54ff059dc1c7af09.js.map
