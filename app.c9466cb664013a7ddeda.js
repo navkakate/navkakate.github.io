@@ -79440,7 +79440,7 @@
 	  _createClass(diagnosisForm, [{
 	    key: 'saveDiagnosis',
 	    value: function saveDiagnosis() {
-	      if (this.isEdit) {
+	      if (this.isEdit && this.isDiagnosisExists() > 1) {
 	        _diagnosesService.get(this).updateDiagnosis(this.diagnosis, this.patientId);
 	        _state.get(this).go('app.clinicalInfo', { patientId: this.patientId });
 	        return false;
@@ -79813,4 +79813,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=app.50e9e9c8ab5cea76fb4b.js.map
+//# sourceMappingURL=app.c9466cb664013a7ddeda.js.map
